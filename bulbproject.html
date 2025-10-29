@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+          .bulb{
+                margin-top: 200px;
+                border-style: solid;
+                margin-left: 500px;
+                margin-right: 500px;
+            }
+            #image{
+                padding-top: 30px;
+                padding-right: 10px;
+                padding-left: 100px;
+                padding-bottom: 20px;
+            }
+            p{
+                padding-left: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+function turnonoff(){
+let image=document.getElementById('Image');
+if(image.src.match("ONbulb"))
+image.src="https://ittrainingclasses.in/OFFbulb.jpg"
+
+else if(image.src.match("OFFbulb"))
+image.src="https://ittrainingclasses.in/ONbulb.jpg"
+
+}
+
+
+        </script>
+        <div class="bulb">
+        <img id="Image" onclick="turnonoff()" src="https://ittrainingclasses.in/OFFbulb.jpg"/>
+        <p>Click for ON and OFF the bulb</p>
+        </div>
+    </body>
